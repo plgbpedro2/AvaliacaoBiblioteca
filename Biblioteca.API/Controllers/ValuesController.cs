@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Biblioteca.Repository;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Biblioteca.API.Controllers
 {
@@ -10,11 +13,27 @@ namespace Biblioteca.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        public BibliotecaContext _context { get; }
+        public ValuesController (BibliotecaContext context)
+        {
+            _context = context;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                var results = await _context.Livros.ToListAsync();
+
+                return Ok(results); 
+            }
+            catch (System.Exception)
+            {
+                
+                return this.StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados falhou");
+            }
         }
 
         // GET api/values/5
