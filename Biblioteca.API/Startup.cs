@@ -28,6 +28,7 @@ namespace Biblioteca.API
         public void ConfigureServices(IServiceCollection services)
         {   
             services.AddDbContext<BibliotecaContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<IBibliotecaRepository, BibliotecaRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddCors(); // adiciona permissão para requisição cruzada
         }
