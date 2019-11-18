@@ -13,6 +13,7 @@ namespace Biblioteca.Repository
         public BibliotecaRepository(BibliotecaContext context)
         {
             _context = context;
+            _context.ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
         }
 
         public void Add<T>(T entity) where T : class
@@ -39,29 +40,30 @@ namespace Biblioteca.Repository
         {
             IQueryable<Livro> query = _context.Livros;
 
-            query = query.OrderBy(l => l.Titulo);
+            query = query.AsNoTracking()
+                    .OrderBy(l => l.Titulo);
 
-            return await query.ToArrayAsync();
+            return await query.AsNoTracking().ToArrayAsync();
             
         }
 
-        public async Task<Livro[]> GetAllLivroAsyncByAutor(string autor)
+        public async Task<Livro[]> GetLivroAsyncByAutor(string autor)
         {
             IQueryable<Livro> query = _context.Livros;
 
             query = query.OrderBy(l => l.Titulo)
                     .Where(l => l.Autor.ToLower().Contains(autor.ToLower()));
 
-            return await query.ToArrayAsync();
+            return await query.AsNoTracking().ToArrayAsync();
         }
 
-        public async Task<Livro[]> GetAllLivroAsyncById(int id)
+        public async Task<Livro> GetLivroAsyncById(int id)
         {
             IQueryable<Livro> query = _context.Livros;
 
             query = query.Where(l => l.Id == id);
 
-            return await query.ToArrayAsync();
+            return await query.AsNoTracking().FirstOrDefaultAsync();
         }
     }
 }

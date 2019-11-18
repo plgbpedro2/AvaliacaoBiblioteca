@@ -38,11 +38,11 @@ namespace Biblioteca.API.Controllers
 
         // get por Id
         [HttpGet("{LivroId}")]
-        public async Task<IActionResult> Get(int livroId){
+        public async Task<IActionResult> Get(int LivroId){
 
             try{
 
-                var results = await _repo.GetAllLivroAsyncById(livroId);
+                var results = await _repo.GetLivroAsyncById(LivroId);
 
                 return Ok(results);
             }
@@ -74,22 +74,23 @@ namespace Biblioteca.API.Controllers
 
             return BadRequest();
 
-        }
-
-
-        [HttpPut]
-        public async Task<IActionResult> Put(int livroId, Livro model){
+        } 
+        
+        
+        [HttpPut("{LivroId}")]
+        public async Task<IActionResult> Put(int LivroId, Livro model){
             
             try
             {                
-                var livro = await _repo.GetAllLivroAsyncById(livroId);
+                var livro = await _repo.GetLivroAsyncById (LivroId);
                 if(livro == null) return NotFound();
 
                 _repo.Update(model);
 
                 if(await _repo.SaveChangesAsync()){
                    
-                    return Created($"/api/[controller]/{model.Id}",model);
+                    return Created($"/api/[controller]/{model.Id}",model); 
+
                 }
 
             }
@@ -100,33 +101,29 @@ namespace Biblioteca.API.Controllers
             }
 
             return BadRequest();
-
-        }
-
-        [HttpDelete]
-        public async Task<IActionResult> Delete(int livroId){
             
+        }
+        
+
+        [HttpDelete("{LivroId}")]
+        public async Task<IActionResult> Delete(int LivroId)
+        {
             try
-            {                
-                var livro = await _repo.GetAllLivroAsyncById(livroId);
-                if(livro == null) return NotFound();
+            {
+                var livro = await _repo.GetLivroAsyncById(LivroId);
+                if (livro == null) return NotFound();
 
                 _repo.Delete(livro);
 
-                if(await _repo.SaveChangesAsync()){
-                   
+                if (await _repo.SaveChangesAsync())
+                {
                     return Ok();
                 }
-
             }
-            catch (System.Exception)
-            {
-                
+            catch (System.Exception) { 
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados falhou");
             }
-
             return BadRequest();
-
         }
 
 
