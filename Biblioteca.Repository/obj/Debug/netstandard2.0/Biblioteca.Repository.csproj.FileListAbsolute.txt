@@ -1,0 +1,12 @@
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\bin\Debug\netstandard2.0\Biblioteca.Repository.deps.json
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\bin\Debug\netstandard2.0\Biblioteca.Repository.dll
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\bin\Debug\netstandard2.0\Biblioteca.Repository.pdb
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\bin\Debug\netstandard2.0\Biblioteca.Domain.dll
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\bin\Debug\netstandard2.0\Biblioteca.Domain.pdb
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\obj\Debug\netstandard2.0\Biblioteca.Repository.csprojAssemblyReference.cache
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\obj\Debug\netstandard2.0\Biblioteca.Repository.csproj.CoreCompileInputs.cache
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\obj\Debug\netstandard2.0\Biblioteca.Repository.AssemblyInfoInputs.cache
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\obj\Debug\netstandard2.0\Biblioteca.Repository.AssemblyInfo.cs
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\obj\Debug\netstandard2.0\Biblioteca.Repository.csproj.CopyComplete
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\obj\Debug\netstandard2.0\Biblioteca.Repository.dll
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Repository\obj\Debug\netstandard2.0\Biblioteca.Repository.pdb

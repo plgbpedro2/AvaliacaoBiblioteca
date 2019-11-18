@@ -1,0 +1,9 @@
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\bin\Debug\netstandard2.0\Biblioteca.Domain.deps.json
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\bin\Debug\netstandard2.0\Biblioteca.Domain.dll
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\bin\Debug\netstandard2.0\Biblioteca.Domain.pdb
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\obj\Debug\netstandard2.0\Biblioteca.Domain.csprojAssemblyReference.cache
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\obj\Debug\netstandard2.0\Biblioteca.Domain.csproj.CoreCompileInputs.cache
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\obj\Debug\netstandard2.0\Biblioteca.Domain.AssemblyInfoInputs.cache
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\obj\Debug\netstandard2.0\Biblioteca.Domain.AssemblyInfo.cs
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\obj\Debug\netstandard2.0\Biblioteca.Domain.dll
+E:\Trabalho\Paralelos\HBSIS\AvaliacaoBiblioteca\Biblioteca.Domain\obj\Debug\netstandard2.0\Biblioteca.Domain.pdb
