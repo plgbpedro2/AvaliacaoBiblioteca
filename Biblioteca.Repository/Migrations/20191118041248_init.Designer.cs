@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Biblioteca.Repository.Migrations
 {
     [DbContext(typeof(BibliotecaContext))]
-    [Migration("20191112223542_init")]
+    [Migration("20191118041248_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -31,7 +31,7 @@ namespace Biblioteca.Repository.Migrations
 
                     b.Property<string>("Editora");
 
-                    b.Property<int>("Tema");
+                    b.Property<string>("Tema");
 
                     b.Property<string>("Titulo");
 

@@ -18,7 +18,7 @@ namespace Biblioteca.Repository.Migrations
                     Autor = table.Column<string>(nullable: true),
                     Edicao = table.Column<int>(nullable: false),
                     DataPublicacao = table.Column<DateTime>(nullable: false),
-                    Tema = table.Column<int>(nullable: false)
+                    Tema = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

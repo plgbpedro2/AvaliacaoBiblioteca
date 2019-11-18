@@ -10,6 +10,6 @@ namespace Biblioteca.Domain
         public string Autor { get; set; }
         public int Edicao { get; set; }
         public DateTime DataPublicacao { get; set; }    
-        public int Tema { get; set; }
+        public string Tema { get; set; }
     }
 }

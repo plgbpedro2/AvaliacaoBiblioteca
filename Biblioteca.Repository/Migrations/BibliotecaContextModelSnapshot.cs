@@ -29,7 +29,7 @@ namespace Biblioteca.Repository.Migrations
 
                     b.Property<string>("Editora");
 
-                    b.Property<int>("Tema");
+                    b.Property<string>("Tema");
 
                     b.Property<string>("Titulo");
 
