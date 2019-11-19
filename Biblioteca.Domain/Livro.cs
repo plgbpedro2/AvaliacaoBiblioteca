@@ -8,8 +8,7 @@ namespace Biblioteca.Domain
         public string Titulo { get; set; }
         public string Editora { get; set; }
         public string Autor { get; set; }
-        public int Edicao { get; set; }
-        public DateTime DataPublicacao { get; set; }    
+        public int Edicao { get; set; }  
         public string Tema { get; set; }
     }
 }

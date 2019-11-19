@@ -121,8 +121,10 @@ namespace Biblioteca.API.Controllers
                 }
             }
             catch (System.Exception) { 
+
                 return this.StatusCode(StatusCodes.Status500InternalServerError, "Banco de dados falhou");
             }
+            
             return BadRequest();
         }
 

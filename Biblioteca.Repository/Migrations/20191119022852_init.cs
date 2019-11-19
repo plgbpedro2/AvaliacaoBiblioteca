@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Biblioteca.Repository.Migrations
 {
@@ -17,7 +16,6 @@ namespace Biblioteca.Repository.Migrations
                     Editora = table.Column<string>(nullable: true),
                     Autor = table.Column<string>(nullable: true),
                     Edicao = table.Column<int>(nullable: false),
-                    DataPublicacao = table.Column<DateTime>(nullable: false),
                     Tema = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
